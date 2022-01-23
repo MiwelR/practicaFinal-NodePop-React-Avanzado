@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { Redirect, useHistory } from "react-router";
+import { useHistory } from "react-router";
 import { Button, Input, Select } from "semantic-ui-react";
 import Layout from "../../layouts";
-import { createAdvert } from "../../api/service";
+// import { createAdvert } from "../../api/service";
+import { useDispatch } from "react-redux";
+import { createAdvert } from "../../store/actions";
 
 import "./NewAdvertPage.scss";
 
@@ -20,7 +22,8 @@ const tagsOptions = [
 
 function NewAdvertPage() {
   const history = useHistory();
-  const [createdAdvertId, setCreatedAdvertId] = useState("");
+  const dispatch = useDispatch();
+  // const [createdAdvertId, setCreatedAdvertId] = useState("");
   const [fail, setFail] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -55,8 +58,8 @@ function NewAdvertPage() {
       form.append("photo", formData.photo);
     }
     try {
-      const newAdvert = await createAdvert(form);
-      setCreatedAdvertId(newAdvert.id);
+      await dispatch(createAdvert(form));
+      // setCreatedAdvertId(newAdvert.id);
     } catch (error) {
       if (error.status === 401) {
         return history.push("/auth");
@@ -66,9 +69,9 @@ function NewAdvertPage() {
     }
   };
 
-  if (createdAdvertId) {
-    return <Redirect to={`/adverts/${createdAdvertId}`} />;
-  }
+  // if (createdAdvertId) {
+  //   return <Redirect to={`/adverts/${createdAdvertId}`} />;
+  // }
 
   return (
     <Layout title="Crea tu anuncio ahora">

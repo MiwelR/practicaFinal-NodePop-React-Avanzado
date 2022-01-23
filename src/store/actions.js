@@ -1,4 +1,4 @@
-import { areAdvertsLoaded, getAdvert } from "./selectors";
+import { areAdvertsLoaded } from "./selectors";
 import {
   AUTH_LOGIN_FAILURE,
   AUTH_LOGIN_REQUEST,
