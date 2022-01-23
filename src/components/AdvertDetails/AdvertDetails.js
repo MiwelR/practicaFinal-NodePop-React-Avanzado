@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 import { Confirm } from "semantic-ui-react";
-import { delAdvert } from "../../api/service";
+// import { delAdvert } from "../../api/service";
+import { useDispatch } from "react-redux";
+import { deleteAdvert } from "../../store/actions";
 import placeholder from "../../assets/placeholder.png";
 
 import "./AdvertDetails.scss";
@@ -10,6 +12,7 @@ const AdvertDetails = ({ ...data }) => {
   const history = useHistory();
   const [state, setState] = useState({ open: false });
   const [deleteAds, setDeleteAds] = useState(false);
+  const dispatch = useDispatch();
 
   const show = () => setState({ open: true });
   const handleConfirm = () => {
@@ -19,11 +22,12 @@ const AdvertDetails = ({ ...data }) => {
 
   useEffect(() => {
     if (deleteAds === true) {
-      delAdvert(data.id);
+      dispatch(deleteAdvert(data.id));
+      // delAdvert(data.id);
       setState({ open: false });
-      return history.push("/adverts");
+      // return history.push("/adverts");
     }
-  }, [data.id, deleteAds, history]);
+  }, [data.id, deleteAds, dispatch, history]);
 
   return (
     <article className="card">

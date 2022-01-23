@@ -7,6 +7,7 @@ import {
   ADVERTS_LOADED_SUCCESS,
   ADVERT_LOADED_SUCCESS,
   ADVERT_CREATED_SUCCESS,
+  ADVERT_DELETED_SUCCESS,
   UI_RESET_ERROR,
 } from "./types";
 
@@ -160,6 +161,30 @@ export function createAdvert(advert) {
       const createdAdvert = await api.service.getAdvert(newAdvert.id);
       dispatch(advertCreated(createdAdvert));
       history.push(`/adverts/${createdAdvert.id}`);
+    } catch (error) {
+      // dispatch(createTweetFailure(error));
+      // if (error.status === 401) {
+      //   history.push('/login');
+      // }
+    }
+  };
+}
+
+export function advertDeleted() {
+  return {
+    type: ADVERT_DELETED_SUCCESS,
+  };
+}
+
+export function deleteAdvert(advert) {
+  return async function (dispatch, getState, { api, history }) {
+    // dispatch createTweetRequest
+    try {
+      await api.service.delAdvert(advert);
+      // this call is neede because the created tweet is incomplete (sparrest)
+      // const deletedAdvert = await api.service.getAdvert(advert.id);
+      dispatch(advertDeleted());
+      history.push(`/adverts/`);
     } catch (error) {
       // dispatch(createTweetFailure(error));
       // if (error.status === 401) {

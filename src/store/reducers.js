@@ -6,6 +6,7 @@ import {
   ADVERTS_LOADED_SUCCESS,
   ADVERT_LOADED_SUCCESS,
   ADVERT_CREATED_SUCCESS,
+  ADVERT_DELETED_SUCCESS,
   UI_RESET_ERROR,
 } from "./types";
 
@@ -38,6 +39,8 @@ export function adverts(advertsState = defaultState.adverts, action) {
       return { loaded: true, data: action.payload };
     case ADVERT_CREATED_SUCCESS:
       return { ...advertsState, data: [...advertsState.data, action.payload] };
+    case ADVERT_DELETED_SUCCESS:
+      return { loaded: false, data: advertsState };
     default:
       return advertsState;
   }
