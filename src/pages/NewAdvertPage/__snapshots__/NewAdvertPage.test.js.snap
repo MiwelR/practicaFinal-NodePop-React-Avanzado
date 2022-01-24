@@ -1,0 +1,685 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewAdvertPage snapshot test 1`] = `
+<div
+  className="layout"
+>
+  <nav
+    className="navbar"
+  >
+    <div
+      className="navbar-brand"
+    >
+      <a
+        className="navbar-item"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="NodePop"
+          src="nodepop-logo.png"
+        />
+      </a>
+    </div>
+    <div
+      className="navbar-menu"
+      id="navbarBasicExample"
+    >
+      <div
+        className="navbar-start"
+      >
+        <div
+          className="navbar-item"
+        >
+          <a
+            aria-current="page"
+            className="current"
+            href="/"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+          >
+            <button
+              className="ui button button is-link"
+              onClick={[Function]}
+            >
+              Anuncios
+            </button>
+          </a>
+          <a
+            aria-current={null}
+            className="button is-link"
+            href="/adverts/new"
+            onClick={[Function]}
+          >
+            + Crear anuncio
+          </a>
+        </div>
+      </div>
+      <div
+        className="navbar-end"
+      >
+        <div
+          className="navbar-item"
+        >
+          <div
+            className="buttons"
+          >
+            <div
+              className="dropdown"
+              id="drop-user"
+            >
+              <div
+                className="dropdown-trigger"
+              >
+                <button
+                  aria-controls="dropdown-menu"
+                  aria-haspopup="true"
+                  className="button is-primary"
+                >
+                  <i
+                    className="fas fa-user-circle"
+                  />
+                  <strong />
+                </button>
+              </div>
+            </div>
+            <button
+              className="ui button button is-primary"
+              onClick={[Function]}
+            >
+              Cerrar sesión
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main
+    className="layout-main"
+  >
+    <h2
+      className="layout-title"
+    >
+      Crea tu anuncio ahora
+    </h2>
+    <section
+      className="layout-content"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <div>
+          <div
+            className="left"
+          >
+            <div
+              className="ui input"
+            >
+              <input
+                name="name"
+                onChange={[Function]}
+                placeholder="Título del anuncio"
+                type="text"
+              />
+            </div>
+          </div>
+          <div
+            className="right"
+          >
+            <div
+              className="ui input"
+            >
+              <input
+                maxLength={6}
+                name="price"
+                onChange={[Function]}
+                placeholder="Precio"
+                type="number"
+              />
+            </div>
+            <div
+              aria-expanded={false}
+              className="ui selection dropdown"
+              name="sale"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="listbox"
+              tabIndex={0}
+            >
+              <div
+                aria-atomic={true}
+                aria-live="polite"
+                className="divider default text"
+                role="alert"
+              >
+                ¿Quieres vender o comprar?
+              </div>
+              <i
+                aria-hidden="true"
+                className="dropdown icon"
+                onClick={[Function]}
+              />
+              <div
+                className="menu transition"
+              >
+                <div
+                  aria-checked={false}
+                  aria-selected={true}
+                  className="selected item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    En venta
+                  </span>
+                </div>
+                <div
+                  aria-checked={false}
+                  aria-selected={false}
+                  className="item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    Se compra
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-expanded={false}
+              aria-multiselectable={true}
+              className="ui multiple selection dropdown"
+              name="tags"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="listbox"
+              tabIndex={0}
+            >
+              <div
+                aria-atomic={true}
+                aria-live="polite"
+                className="divider default text"
+                role="alert"
+              >
+                Categoría/as
+              </div>
+              <i
+                aria-hidden="true"
+                className="dropdown icon"
+                onClick={[Function]}
+              />
+              <div
+                className="menu transition"
+              >
+                <div
+                  aria-checked={false}
+                  aria-selected={true}
+                  className="selected item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    lifestyle
+                  </span>
+                </div>
+                <div
+                  aria-checked={false}
+                  aria-selected={false}
+                  className="item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    mobile
+                  </span>
+                </div>
+                <div
+                  aria-checked={false}
+                  aria-selected={false}
+                  className="item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    motor
+                  </span>
+                </div>
+                <div
+                  aria-checked={false}
+                  aria-selected={false}
+                  className="item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    work
+                  </span>
+                </div>
+              </div>
+            </div>
+            <input
+              name="photo"
+              onChange={[Function]}
+              type="file"
+            />
+            <div>
+              <button
+                className="ui disabled button"
+                disabled={true}
+                onClick={[Function]}
+                tabIndex={-1}
+                type="submit"
+                variant="primary"
+              >
+                Crear anuncio
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer
+    className="layout-footer"
+  >
+    © 2021 Miguel Ángel
+  </footer>
+</div>
+`;
+
+exports[`NewTweetPage snapshot test 1`] = `
+<div
+  className="layout"
+>
+  <nav
+    className="navbar"
+  >
+    <div
+      className="navbar-brand"
+    >
+      <a
+        className="navbar-item"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="NodePop"
+          src="nodepop-logo.png"
+        />
+      </a>
+    </div>
+    <div
+      className="navbar-menu"
+      id="navbarBasicExample"
+    >
+      <div
+        className="navbar-start"
+      >
+        <div
+          className="navbar-item"
+        >
+          <a
+            aria-current="page"
+            className="current"
+            href="/"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+          >
+            <button
+              className="ui button button is-link"
+              onClick={[Function]}
+            >
+              Anuncios
+            </button>
+          </a>
+          <a
+            aria-current={null}
+            className="button is-link"
+            href="/adverts/new"
+            onClick={[Function]}
+          >
+            + Crear anuncio
+          </a>
+        </div>
+      </div>
+      <div
+        className="navbar-end"
+      >
+        <div
+          className="navbar-item"
+        >
+          <div
+            className="buttons"
+          >
+            <div
+              className="dropdown"
+              id="drop-user"
+            >
+              <div
+                className="dropdown-trigger"
+              >
+                <button
+                  aria-controls="dropdown-menu"
+                  aria-haspopup="true"
+                  className="button is-primary"
+                >
+                  <i
+                    className="fas fa-user-circle"
+                  />
+                  <strong />
+                </button>
+              </div>
+            </div>
+            <button
+              className="ui button button is-primary"
+              onClick={[Function]}
+            >
+              Cerrar sesión
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main
+    className="layout-main"
+  >
+    <h2
+      className="layout-title"
+    >
+      Crea tu anuncio ahora
+    </h2>
+    <section
+      className="layout-content"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <div>
+          <div
+            className="left"
+          >
+            <div
+              className="ui input"
+            >
+              <input
+                name="name"
+                onChange={[Function]}
+                placeholder="Título del anuncio"
+                type="text"
+              />
+            </div>
+          </div>
+          <div
+            className="right"
+          >
+            <div
+              className="ui input"
+            >
+              <input
+                maxLength={6}
+                name="price"
+                onChange={[Function]}
+                placeholder="Precio"
+                type="number"
+              />
+            </div>
+            <div
+              aria-expanded={false}
+              className="ui selection dropdown"
+              name="sale"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="listbox"
+              tabIndex={0}
+            >
+              <div
+                aria-atomic={true}
+                aria-live="polite"
+                className="divider default text"
+                role="alert"
+              >
+                ¿Quieres vender o comprar?
+              </div>
+              <i
+                aria-hidden="true"
+                className="dropdown icon"
+                onClick={[Function]}
+              />
+              <div
+                className="menu transition"
+              >
+                <div
+                  aria-checked={false}
+                  aria-selected={true}
+                  className="selected item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    En venta
+                  </span>
+                </div>
+                <div
+                  aria-checked={false}
+                  aria-selected={false}
+                  className="item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    Se compra
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-expanded={false}
+              aria-multiselectable={true}
+              className="ui multiple selection dropdown"
+              name="tags"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="listbox"
+              tabIndex={0}
+            >
+              <div
+                aria-atomic={true}
+                aria-live="polite"
+                className="divider default text"
+                role="alert"
+              >
+                Categoría/as
+              </div>
+              <i
+                aria-hidden="true"
+                className="dropdown icon"
+                onClick={[Function]}
+              />
+              <div
+                className="menu transition"
+              >
+                <div
+                  aria-checked={false}
+                  aria-selected={true}
+                  className="selected item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    lifestyle
+                  </span>
+                </div>
+                <div
+                  aria-checked={false}
+                  aria-selected={false}
+                  className="item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    mobile
+                  </span>
+                </div>
+                <div
+                  aria-checked={false}
+                  aria-selected={false}
+                  className="item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    motor
+                  </span>
+                </div>
+                <div
+                  aria-checked={false}
+                  aria-selected={false}
+                  className="item"
+                  onClick={[Function]}
+                  role="option"
+                  style={
+                    Object {
+                      "pointerEvents": "all",
+                    }
+                  }
+                >
+                  <span
+                    className="text"
+                  >
+                    work
+                  </span>
+                </div>
+              </div>
+            </div>
+            <input
+              name="photo"
+              onChange={[Function]}
+              type="file"
+            />
+            <div>
+              <button
+                className="ui disabled button"
+                disabled={true}
+                onClick={[Function]}
+                tabIndex={-1}
+                type="submit"
+                variant="primary"
+              >
+                Crear anuncio
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer
+    className="layout-footer"
+  >
+    © 2021 Miguel Ángel
+  </footer>
+</div>
+`;
